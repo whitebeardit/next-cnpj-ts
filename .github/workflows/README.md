@@ -8,11 +8,11 @@ O workflow de CI/CD é acionado automaticamente quando há push ou pull request 
 
 Para que o semantic-release funcione corretamente, você precisa configurar o seguinte secret no GitHub:
 
-1. **NPM_TOKEN**: Token de autenticação do NPM (obrigatório para publicar no NPM)
+1. **NPM_TOKEN_NEXT_CNPJ**: Token de autenticação do NPM (obrigatório para publicar no NPM)
    - Acesse: https://www.npmjs.com/settings/[seu-usuario]/tokens
    - Crie um token do tipo "Automation" ou "Publish"
    - Adicione como secret no GitHub: Settings > Secrets and variables > Actions > New repository secret
-   - Nome: `NPM_TOKEN`
+   - Nome: `NPM_TOKEN_NEXT_CNPJ`
    - Valor: o token gerado
 
 2. **GITHUB_TOKEN**: Já está disponível automaticamente nas Actions através de `secrets.GITHUB_TOKEN`, não precisa configurar manualmente

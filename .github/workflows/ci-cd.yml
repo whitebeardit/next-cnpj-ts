@@ -87,4 +87,4 @@ jobs:
           semantic_version: 21
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN_NEXT_CNPJ }}
