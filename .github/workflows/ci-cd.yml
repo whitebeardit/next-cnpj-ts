@@ -81,6 +81,11 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Configure NPM registry
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN_NEXT_CNPJ }}" > ~/.npmrc
+          npm whoami --registry=https://registry.npmjs.org || echo "Warning: Could not verify NPM authentication"
+
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
         with:
