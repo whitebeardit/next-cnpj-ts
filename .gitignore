@@ -10,3 +10,4 @@ coverage/
 *.swn
 .env
 .env.local
+.npmrc
