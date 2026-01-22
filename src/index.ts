@@ -12,4 +12,5 @@ export { ICnpjFormatIdentifier } from './services/ICnpjFormatIdentifier';
 // Utility exports (if needed for advanced usage)
 export { AsciiConverter } from './utils/AsciiConverter';
 export { CnpjNormalizer } from './utils/CnpjNormalizer';
+export { CnpjFormatter } from './utils/CnpjFormatter';
 export { DigitVerifierCalculator } from './utils/DigitVerifierCalculator';
